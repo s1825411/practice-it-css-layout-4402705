@@ -1,0 +1,75 @@
+.container {
+  font-size: 30px;
+}
+.navigation {
+border: 1px solid black;
+}
+.title {
+border: 1px solid black;
+}
+
+.main {
+border: 1px solid black;
+}
+
+.related {
+border: 1px solid black;
+}
+
+.ads {
+border: 1px solid black;
+}
+
+.footer {
+border: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "navigation" 
+    "title title" 
+    "main related" 
+    "ads ads" 
+    "footer footer";
+  }
+
+    .navigation {
+      grid-area: navigation;
+    }
+  
+    .title {
+      grid-area: title;
+    }
+  
+    .main {
+      grid-area: main;
+    }
+  
+    .related {
+      grid-area: related;
+    }
+
+    .ads {
+      grid-area: ads;
+    }
+  
+    .footer {
+      grid-area: footer;
+    }
+}
+ @media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr 1fr;
+    grid-template-areas:  "navigation title title" 
+    "navigation main related" 
+    "navigation ads ads" 
+    "navigation footer footer";
+    height: 100%;
+  }
+  
+
+ }
+
